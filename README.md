@@ -1,5 +1,4 @@
-# todo-app
-
+# Song Request App (CSA edition)
 > A Vue.js project
 
 ## Build Setup
