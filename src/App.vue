@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1 class="ui dividing centered header">Vue.js Todo App</h1>
+    <h1 class="ui dividing centered header">CSA Karaoke Night</h1>
     <div class='ui three column centered grid'>
       <div class='column'>
         <todo-list v-bind:todos="todos"></todo-list>
@@ -23,29 +23,13 @@ export default {
   },
   data() {
     return {
-      todos: [{
-        title: 'Todo A',
-        project: 'Project A',
-        done: false,
-      }, {
-        title: 'Todo B',
-        project: 'Project B',
-        done: true,
-      }, {
-        title: 'Todo C',
-        project: 'Project C',
-        done: false,
-      }, {
-        title: 'Todo D',
-        project: 'Project D',
-        done: false,
-      }],
+      todos: [],
     };
   },
   methods: {
     createTodo(newTodo) {
       this.todos.push(newTodo);
-      sweetalert('Success!', 'To-Do created!', 'success');
+      sweetalert('Success!', 'Your song is added to queue!', 'success');
     },
   },
 };
